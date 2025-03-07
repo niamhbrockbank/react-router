@@ -13,7 +13,7 @@ export default function Events() {
       <ul>
         {EVENTS.map((event) => (
           <li key={event.id}>
-            <Link to={"/events/" + event.id}>{event.name}</Link>
+            <Link to={event.id}>{event.name}</Link>
           </li>
         ))}
       </ul>
